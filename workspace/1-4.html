@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>웹 페이지의 구성 요소</title>
+	<style type="text/css">
+		body{
+			background: mistyrose;
+			color: green;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		h3{
+			color: brown;
+			text-align: center;
+		}
+		hr{
+			height: 5px;
+			border: solid grey;
+			background-color: grey;
+		}
+		span{
+			font-size: 20px;
+			color: violet;
+		}
+	</style>
+	<script type="text/javascript">
+		function show(){
+			document.getElementById("fig").src="smartphone1.png";
+		}
+		function hide(){
+			document.getElementById("fig").src="";
+		}
+	</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">Elvis Presley</h3>
+<hr>
+<div><img id="fig" src="" alt="smartphone"></div>
+<p>
+Elvis Aaron Presley[a] (January 8, 1935 – August 16, 1977) was an American singer and actor. Regarded as one of the most significant cultural icons of the 20th century, he is often referred to as the <span>"King of Rock and Roll"</span> or simply the "King".
+</p>
+</body>
+</html>

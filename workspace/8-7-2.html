@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img id = "j" src="2.png" width="100" height="140" onclick="f()">
+<script type="text/javascript">
+	var mov = 90;
+	function f(){
+		var e = document.getElementById("j");
+		e.style.transform = "rotate(" + mov + "deg)";
+		mov = mov + 90;
+		mov = mov % 360;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div { position: absolute; }
+		img {position: absolute;}
+	</style>
+</head>
+<body>
+<div>
+	<img src = "1.png" width = "100" height = "140">
+	<img src = "2.png" width = "100" height = "140">
+	<img src = "3.png" width = "100" height = "140">
+</div>
+<script type="text/javascript">
+	var card = document.getElementsByTagName("img");
+
+		card[0].style.zIndex = "3";
+		card[1].style.zIndex = "2";
+		card[2].style.zIndex = "1";
+		for(var e = 0 ; e < 3 ; e++){
+		card[e].style.left = "10px";
+		card[e].style.top = "20px";
+		}
+		for(var u = 0 ; u < 3 ; u++){
+	card[u].addEventListener("click",
+		function a(){
+			var tmp1, tmp2;
+			tmp1 = card[2].style.zIndex;
+			tmp2 = card[0].style.zIndex;
+			card[0].style.zIndex = tmp1;
+			card[2].style.zIndex = card[1].style.zIndex;
+			card[1].style.zIndex = tmp2;
+		}
+		);
+	}
+</script>
+</body>
+</html>

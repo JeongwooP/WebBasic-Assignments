@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function addAnswer(obj, text){
+			var parent = obj.parentElement;
+			var child = document.createElement("p");
+			child.innerHTML = text;
+			parent.appendChild(child);
+			child.addEventListener("click",
+				function(){
+					parent.removeChild(child);
+				});
+		}
+	</script>
+</head>
+<body>
+<h3>정답의 동적 삽입</h3>
+<hr>
+<div><p>거울아 거울아</p><button onclick="addAnswer(this,'백설공주')">답보기</button></div>
+<div><p>hello</p><button onclick="addAnswer(this,'둘다')">답보기</button></div>
+</body>
+</html>

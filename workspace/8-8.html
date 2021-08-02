@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="2.png" width="100" height="140" onclick="scale(this)">
+	<script type="text/javascript">
+		var s = 1;
+		function scale(i){
+			if(s>=5) s=5;
+			i.style.transform = "scaleX(" + s + ")";//"scale(" + s + ", 1)"
+			s++;
+		}
+	</script>
+</body>
+</html>

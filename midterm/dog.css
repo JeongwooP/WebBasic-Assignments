@@ -1,0 +1,17 @@
+tbody tr:nth-child(odd){
+	background: rgb(200,200,200);
+}
+img{
+	width: 150px;
+}
+td{
+	padding: 10px;
+	text-align: center;
+}
+table{
+	border-collapse: collapse;
+}
+td{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}

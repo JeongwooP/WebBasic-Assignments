@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>기숙사</title>
+	<style type="text/css">
+		table, td, th{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		body{
+			background: rgb(200, 250, 255);
+		}
+		caption{
+			font-size: 20px;
+			font-weight: 900;
+		}
+		tbody{
+			background: #FFF7A0;
+		}
+		tbody td:hover{
+			background: #FF80FF;
+		}
+		th, td{padding: 5px;
+			text-align: center;}
+		.room{
+			color: blue;
+			font-weight: bold;
+		}
+		tfoot td{
+			font-weight: bold;
+		}
+		div{
+			font-style: italic;
+			color: darkblue;
+			font-size: 0.9em;
+		}
+		span{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<header>
+<h3>기숙사 안내</h3>
+<br>
+<p>기숙사 객실 안내</p>
+<hr>
+</header>
+
+<section>
+<article>
+<h4>기숙사</h4>
+<br>
+<p>각 객실에 대한 크기와 가격은 다음 표와 같습니다.</p>
+<br>
+</article>
+<article>
+<table>
+	<caption>객실 정보</caption>
+	<thead>
+		<tr>
+			<th>방 이름</th><th>대상</th><th>크기</th><th>가격</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="3">바깥채 전체</td><td>100.000원</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr><td class="room">유채방</td><td>여성</td><td rowspan="3">4인실</td><td rowspan="4">1인 20,000원</td></tr>
+		<tr><td rowspan="2"  class="room">동백방</td><td>동성</td></tr>
+		<tr>						<td>가족 1팀</td></tr>
+		<tr><td class="room">천혜향방</td><td>-</td><td>2인실</td></tr>
+	</tbody>
+</table>
+<hr>
+<br>
+</article>
+</section>
+<footer>
+	<div>경기도 용인시 기흥구 강남로 40 강남대학교</div><br>
+	<div><span>예약문의</span>031-280-0000, webmaster@google.com</div><br>
+	<div>Copyright. All rights reserved.</div>
+</footer>
+</body>
+</html>

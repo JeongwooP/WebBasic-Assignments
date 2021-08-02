@@ -1,0 +1,13 @@
+1차과제 피드백
+
+4 - <audio> 태그는 <head> 태그 내부로 이동
+  - <a href="D:\ ~ => 상대경로로 수정 (ex, “./survey3.html”)
+    <img src="C:\ ~ => 상대경로로 수정
+    <audio src="C:\ ~ => 상대경로로 수정
+  - 샘플 <article>도 <section> 내부에 포함되도록 수정
+2 - <footer>가 있으면 <header> <section> <article>도 있는 것이 바람직
+  - “진로”, “남기고 싶은 말”에도 <label> 추가
+1 - <section> 내부에 전체 내용을 2x2 table로 구성
+  - 그림 1-3은 image가 아니라 <pre> <code> 이용
+  - tag의 레벨에 따라 <tab> 키로 들여쓰기(indentation) 맞추기
+2

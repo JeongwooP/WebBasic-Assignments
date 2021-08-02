@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function change(){
+		var s = document.getElementsByTagName("span");
+		for(var i = 0; i < s.length ; i++)
+		{
+			var c = window.getComputedStyle(s[i]);
+			var val = c.getPropertyValue("visibility");
+			if(val != "hidden")
+				s[i].style.visibility = "hidden";
+			else
+				s[i].style.visibility = "visible";
+		}
+	}
+</script>
+<style type="text/css">
+	span{
+		visibility: hidden;
+	}
+</style>
+</head>
+<body>
+	<button onclick="change()">show/hide</button>
+	<hr>
+<ul>
+	<li>I (<span>love</span>) you.</li>
+	<li>응답하라 (<span>1988</span>)</li>
+</ul>
+</body>
+</html>

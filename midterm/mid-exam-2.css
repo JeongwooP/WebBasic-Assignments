@@ -1,0 +1,35 @@
+ul{
+	list-style-type: none;
+}
+li{
+	padding: 5px;
+	margin: 5px;
+}
+ul a{
+	text-decoration: none;
+	border-left-width: 3px: 
+	border-left-style: solid;
+	border-left-color: darkmagenta;
+	font-size: 1.2em;
+}
+a:hover{
+	color:darkorange;
+	background: lightgray;
+}
+a:active{
+	color: brown;
+	background: white;
+	font-weight: bold;
+}
+hr{
+	border-width: 1px;
+	border-style: dashed;
+	border-color: rgb(100, 10, 200);
+}
+article{
+	padding: 0.5px;
+	margin: 3px;
+}
+h2{
+	color: rgb(150,150,150);
+}

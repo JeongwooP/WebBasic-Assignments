@@ -1,0 +1,23 @@
+		h1{
+			text-align: center;
+			color: brown;
+		}
+		body{
+			background: aliceblue;
+		}
+		p, label{
+			font-family: 휴먼편지체;
+			text-indent: 1em;
+			font-size: 1em;
+		}
+		section{
+			background: pink;
+		}
+		footer{
+			background: orange;
+			border-radius: 10px;
+		}
+		span{
+			font-weight: bold;
+			color: blue;
+		}
