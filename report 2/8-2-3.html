@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function change(){
+		 	var a = document.getElementById("mySpan");
+			a.style.display = "inline"
+			a.style.border = "2px dotted violet";
+
+		}
+	function count(){
+		var s = document.getElementsByTagName("p");
+		var e = s.length;
+		alert("<p>태그의 개수는" + e);
+	}
+	</script>
+</head>
+<body>
+<h3>자바스크립트란?
+<button onclick="change()">border</button>
+<button onclick="count()">p</button>
+</h3>
+<hr>
+<p>자바스크립트는 웹...</p>
+<p><span id="mySpan">C언어</span>를 아는 사용자는...</p>
+<p>이벤트 등 GUI...</p>
+</body>
+</html>

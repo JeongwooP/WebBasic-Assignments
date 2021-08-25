@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>정답의 동적 삽입</h3>
+<hr>
+<div>거울아 거울아</div>
+<br>
+<button onclick="answer1()">답보기</button>
+<br>
+<div>죽느냐 사느냐</div>
+<button onclick="answer2()">답보기</button>
+<br>
+<script type="text/javascript">
+	function answer1(){
+		var parent = document.getElementsByTagName("div");
+		var ans1 = document.createElement("p");
+		ans1.innerHTML = "백설공주";
+		parent[0].appendChild(ans1);
+		ans1.addEventListener("click",
+		function (){
+			parent[0].removeChild(ans1);
+			}
+		)	
+	}
+	function answer2(){
+		var parent = document.getElementsByTagName("div");
+		var ans2 = document.createElement("p");
+		ans2.innerHTML = "hi";
+		parent[1].appendChild(ans2);
+		ans2.addEventListener("click",
+		function (){
+			parent[1].removeChild(ans2);
+			}
+		)	
+	}
+</script>
+</body>
+</html>

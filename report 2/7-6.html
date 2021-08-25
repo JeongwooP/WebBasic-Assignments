@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function cutter(b){
+			var sub = b.split("&");
+			for(var c = 0; c < sub.length ; c++)
+				document.write(sub[c] + "<br>");
+		}
+	</script>
+</head>
+<body>
+<h3>문자열 분할</h3>
+<hr>
+	<script type="text/javascript">
+		var a = prompt("문자열 입력", "");
+		var i = new String(a);
+		cutter(i);
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function game1(i){
+			var e = Math.floor(Math.random() *3);
+			i.innerHTML = e + " ";
+			return e;
+		}
+		var a1 = game1(5);
+		document.write(a1);
+		function game2(i){
+			var e = Math.floor(Math.random() *3);
+			i.innerHTML = eval(e);
+			return e;
+		}
+		function game3(i){
+			var e = Math.floor(Math.random() *3);
+			i.innerHTML = eval(e);
+			var m = document.getElementById("result");
+			m.style.color = "pink";
+			m.style.fontStyle = "italic"	
+			if(game1(i)==game2(i) && game2(i)==e){
+				m.innerHTML = "Success(click here to do to again)";
+			}else{
+				m.innerHTML = "fail(click here to do to again)";	
+			}
+		}
+		function redo(){
+			var i = document.getElementByTagName("span");
+			for(var j = 0 ; j.length ; j++){
+				i[j].innerHTML = "0";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p> <span onclick="game1(this)">0</span>
+		<span onclick="game2(this)">0</span>
+		<span onclick="game3(this)">0</span></p>
+	<div onclick="redo()" id = "result"></div>
+</body>
+</html>
